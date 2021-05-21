@@ -81,6 +81,21 @@ alter table prijatelj_ostavljena add foreign key (ostavljena) references ostavlj
 
 alter table svekrva add foreign key (punac) references punac(sifra);
 
+#U tablice zena, brat i prijatelj_ostavljena unesite po 3 retka.
+insert into prijatelj(prstena,stilfrizura)
+values(10,'normalna'),(15,'čudna'),(17,'s gelom');
+
+insert into brat(nausnica,treciputa,narukvica)
+values(10,'2015-09-09',9),(8,'2016-08-09',7),(6,'2014-10-11',6);
+
+insert into zena(novcica,narukvica,dukserica,brat)
+values(99.99,8,'jesenska',1),(99.88,6,'proljetna',2),(44.99,2,'s kapuljačom',3);
+
+insert into ostavljena(prviputa,kratkamajica)
+values('2020-10-10','nike'),('1998-09-08','Adidas'),('2013-08-12','Puma');
+
+insert into prijatelj_ostavljena(prijatelj,ostavljena)
+values(1,1),(2,2),(3,3);
 
 
 
