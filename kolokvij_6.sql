@@ -103,6 +103,9 @@ update svekrva set suknja = 'Osijek';
 #U tablici decko obrišite sve zapise čija je vrijednost kolone modelnaocala manje od AB.
 delete from decko where modelnaocala < 'AB';
 
+#Izlistajte narukvica iz tablice brat uz uvjet da vrijednost kolone treciputa nepoznate.
+select narukvica from brat where treciputa is null;
+
 
 
 
