@@ -100,6 +100,8 @@ values(1,1),(2,2),(3,3);
 #U tablici svekrva postavite svim zapisima kolonu suknja na vrijednost Osijek.
 update svekrva set suknja = 'Osijek';
 
+#U tablici decko obrišite sve zapise čija je vrijednost kolone modelnaocala manje od AB.
+delete from decko where modelnaocala < 'AB';
 
 
 
