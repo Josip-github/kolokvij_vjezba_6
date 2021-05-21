@@ -97,6 +97,9 @@ values('2020-10-10','nike'),('1998-09-08','Adidas'),('2013-08-12','Puma');
 insert into prijatelj_ostavljena(prijatelj,ostavljena)
 values(1,1),(2,2),(3,3);
 
+#U tablici svekrva postavite svim zapisima kolonu suknja na vrijednost Osijek.
+update svekrva set suknja = 'Osijek';
+
 
 
 
