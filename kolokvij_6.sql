@@ -121,6 +121,10 @@ inner join zena z on b.sifra = z.brat
 inner join decko d on z.sifra = d.zena 
 where b.treciputa is not null and p.prstena = 219;
 
+#Prikažite kolone prstena i introvertno iz tablice prijatelj čiji se primarni ključ ne nalaze u tablici prijatelj_ostavljena.
+select p.prstena , p.introvertno 
+from prijatelj p inner join prijatelj_ostavljena po on p.sifra = po.prijatelj 
+where po.prijatelj is null;
 
 
 
